@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Practica 2.1</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="caja">
+            <table class="A">
+                <tbody>
+                    <tr>
+                        <td><span>Tratamiento: *</span><br><input class="radio" type="radio" name="hm" value="h" required> Sr.
+                            <input class="radio" type="radio" name="hm" value="h" required> Sra.</td>
+                        <td><span>Nombre: *</span><br><input type="text" name="nombre" required></td>
+                        <td><span>Apellido 1: *</span><br><input class="apellido" type="text" name="nombre" required></td>
+                        <td><span class="apellido2">Apellido 2: *</span><br><input class="apellido2" type="text" name="nombre" required></td>
+                    </tr>
+                    <tr>
+                        <td><span>Tipo Doc: *</span><br><select class="dni" name="menu">
+                                <option>D.N.I.</option>
+                                <option>N.I.F.</option>
+                                <option>Otra opción...</option>
+                              </select></td>
+                        <td><span>Nº Doc: * <img src="img/interrogante.PNG"><br><input type="text" name="nombre" maxlength="9"></span></td>
+                        <td><span>Fecha de Nacimiento: * <img src="img/interrogante.PNG"></span><br><input class="fecha" type="date" name="fecha"></td>
+                    </tr>
+                    <tr>
+                        <td><span>País de nacimiento: *</span><br><select class="range" name="menu">
+                                <option value="1">ESPAÑA</option>
+                                <option value="2">PORTUGAL</option>
+                                <option value="3">FRANCIA</option>
+                                <option value="4">ITALIA</option>
+                                <option value="5">ALEMANIA</option>
+                              </select>
+                        </td>
+                        <td><span>Nacionalidad: *</span><br><select class="nacion" name="menu">
+                                <option value="1">ESPAÑA</option>
+                                <option value="2">PORTUGAL</option>
+                                <option value="3">FRANCIA</option>
+                                <option value="4">ITALIA</option>
+                                <option value="5">ALEMANIA</option>
+                              </select>
+                        </td>
+                        <td><span>Segunda nacionalidad: *</span><br><select class="nacion" name="menu">
+                                <option value="1" selected>Ninguna</option>
+                                <option value="2">ESPAÑA</option>
+                                <option value="3">PORTUGAL</option>
+                                <option value="4">FRANCIA</option>
+                                <option value="5">ITALIA</option>
+                                <option value="6">ALEMANIA</option>
+                              </select>
+                        </td>
+                        <td><span class="apellido2">País resiencia fiscal: *</span><br><select class="residencia" name="menu">
+                                <option value="2">ESPAÑA</option>
+                                <option value="3">PORTUGAL</option>
+                                <option value="4">FRANCIA</option>
+                                <option value="5">ITALIA</option>
+                                <option value="6">ALEMANIA</option>
+                              </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Trabajo: *</span><br><select class="trabajo" name="menu">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                          </select>
+                        </td>
+                        <td><span>Tipo de Actividad: *</span><br><select class="range" name="menu">
+                                <option></option>
+                                <option>Amo/a de casa</option>
+                                <option>Estudiante</option>
+                                <option>Desempleado</option>
+                                <option>Jubilado</option>
+                                <option>Pensionista</option>
+                              </select>
+                        </td>
+                        <td><span>Sector profesional: *</span><br><select class="sector" name="menu">
+                                <option></option>
+                                <option>No trabaja</option>
+                                <option>Banca</option>
+                                <option>Construcción</option>
+                                <option>Energia</option>
+                                <option>Industria</option>
+                                <option>Recursos humanos</option>
+                                <option>Servicios</option>
+                              </select>
+                        </td>
+                        <td><span class="apellido2">Empresa: * <img src="img/interrogante.PNG"><br><input class="empresa" type="text" name="nombre"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span>Popósito de la cuenta: *</span><br><select class="range" name="menu">
+                                <option value="1" selected>Ahorro</option>
+                                <option value="2">otro motivo</option>
+                              </select>
+                        </td>
+                        <!-- Cambiar la class/ajustar largo y ancho -->
+                        <td><span>Origen de sus ahorros: *</span><br><select class="ahorros" name="menu">
+                                <option value="1" selected>Nomina o pensión</option>
+                                <option value="2">otro motivo</option>
+                              </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <fieldset>
+                <table class="B">
+                    <tbody>
+                        <tr class="fila1">
+                            <td><span>Tipo de via*</span>
+                                <br>
+                                <select class="range" name="menu">
+                                    <option>CALLE</option>
+                                    <option>PLAZA</option>
+                                    <option>AVENIDA</option>
+                                    <option>PASEO</option>
+                                </select>
+                            </td>
+                            <td><span>Dirección*</span><br>
+                                <input type="email" name="correo" size="25">
+                            </td>
+                            <td><span class="numero">Numero*</span><br><input class="numero" type="text" name="numero" maxlength="2" size="8"></td>
+                            <td><span class="piso">Piso</span><br><input class="piso" type="text" name="piso" maxlength="2" size="8"></td>
+                        </tr>
+                        <tr>
+                            <td><span>Urb./Pol./Otros</span><br><input class="" type="text" name="text"></td>
+                            <td><span>Localidad*</span><br><input class="" type="text" name="localidad"></td>
+                            <td><span>Provincia*</span><br><select class="range" name="menu">
+                                    <option></option>
+                                    <option>Álava (Araba)</option>
+                                    <option>Albacete </option>
+                                    <option>Alicante </option>
+                                    <option>Almería </option>
+                                    <option>Asturias</option>
+                                    <option> Ávila </option>
+                                    <option>Badajoz </option>
+                                    <option>Barcelona </option>
+                                    <option>Burgos </option>
+                                    <option>Cáceres </option>
+                                    <option>Cádiz (Andalucía, ES)</option>
+                                    <option>Castellón </option>
+                                    <option>Ciudad Real </option>
+                                    <option>Córdoba </option>
+                                    <option>Cuenca </option>
+                                    <option>Cantabria</option>
+                                    <option>Cartagena</option>
+                                    <option>Gerona </option>
+                                    <option>Granada </option>
+                                    <option>Guadalajara </option>
+                                    <option>Guipúzcoa </option>
+                                    <option>Huelva </option>
+                                    <option>Huesca </option>
+                                    <option>Islas Baleares </option>
+                                    <option>Jaén </option>
+                                    <option>Salamanca</option>
+                                    <option>Valencia </option>
+                                    <option>Valladolid </option>
+                                    <option>Vizcaya </option>
+                                    <option> Zamora </option>
+                                    <option> Zaragoza </option>
+                                  </select>
+                            </td>
+                            <td><span>Codigo postal*</span><input class="" type="text" name="codigo" maxlength="5" size="25"></td>
+                        </tr>
+                        <tr>
+                            <td><span>Teléfono móvil:* <img src="img/interrogante.PNG"></span><input class="" type="text" name="telefono" maxlength="9"></td>
+                            <td><span>Teléfono particular:* <img src="img/interrogante.PNG"></span><br><input class="" type="text" name="telefono" maxlength="9"></td>
+                            <td><span>Dirección e-mail:* <img src="img/interrogante.PNG"></span><input class="" type="email" name="correo" maxlength="9" size="28"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <hr>
+            <span>Para ofrecer un mejor servicio nos seria útil conocer si posee en otra entidad:</span><br>
+            <input class="cuadrado" type="radio" name="boton" value="1"> Plan de pensiones
+            <input class="cuadrado" type="radio" name="boton" value="2"> Fondos
+            <input class="cuadrado" type="radio" name="boton" value="3"> Acciones
+            <input class="cuadrado" type="radio" name="boton" value="4"> Hipoteca
+            <input class="cuadrado" type="radio" name="boton" value="5"> Prestamo
+            <input class="cuadrado" type="radio" name="boton" value="6"> Seguro de Vida
+            <hr>
+            <button class="boton" type="button"><img src="img/flecha.PNG" height="">Continuar</button>
+            <pre>Puede consultar en nuestra web o solicitar toda la <u>Información
+Precontractual</u> de nuestros productos. Al pulsar "Continuar" esta
+aceptando la <u>Cláusula de Protección de datos</u></pre>
+            <pre>(*) Los campos marcados con asterisco son obligatorios.</pre>
+        </div>
+    </main>
+</body>
+</html>
